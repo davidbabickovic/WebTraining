@@ -1,0 +1,53 @@
+
+
+
+nav{
+    text-align: center;
+    padding-block:10px;
+    background-color: rgb(36, 36, 36);
+}
+.navbutton{
+    
+    text-decoration: none;
+    color:white;
+    font-size: x-large;
+    position:static;
+    display: inline-block;
+    margin-inline: 15px;
+    padding-inline:20px;
+
+    background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 10px;
+    
+
+}
+
+.navbutton:hover{
+    font-weight: bolder;
+    color: White;
+
+    
+}
+
+/* The gray section */
+.section2{
+    margin-top: 20px;
+    /*background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+    background-color: rgb(36, 36, 36);
+    height: 500px;
+}
+
+
+
+/* The vertical line betwen text and picture */
+@media only screen and (min-width: 992px){
+    div.vertical-line{
+
+        margin-block: auto;
+        width: 5px; /* Line width */
+        background: linear-gradient(0deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);; /* Line color */
+        height: 80%; /* Override in-line if you want specific height. */
+
+        border-radius: 99px;
+    }
+}
