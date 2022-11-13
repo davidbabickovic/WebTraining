@@ -1,33 +1,76 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+:root{
 
-
-nav{
-    text-align: center;
-    padding-block:10px;
-    background-color: rgb(36, 36, 36);
+    --linear-background:linear-gradient(0deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    --first-color:hsl(230, 96%, 62%);
+    --second-color:hsl(348, 97%, 63%);
 }
-.navbutton{
-    
-    text-decoration: none;
-    color:white;
-    font-size: x-large;
-    position:static;
-    display: inline-block;
-    margin-inline: 15px;
-    padding-inline:20px;
+/* =============> nav <============= */
+@media screen and (max-width: 850px){
+    .nav__links{
+        display: none;
+    }
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+   
+}
 
-    background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    border-radius: 10px;
-    
+header nav ul li, a, button{
+    font-family: 'Lilita One', cursive;
+    text-decoration: none !important;
 
 }
 
-.navbutton:hover{
+.logo{
+    cursor: pointer;
+    margin-right: auto;
     font-weight: bolder;
-    color: White;
-
-    
 }
+
+.nav__links{
+    list-style: none;
+    margin-block: auto;
+    font-size: 1.25rem;
+ 
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 15px;
+
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color:var(--second-color)
+}
+
+.nav__button button{
+    margin-left:20px;
+    padding:9px 25px;
+    background-color: var(--first-color) ;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    color: rgb(243, 230, 205);
+
+}
+.nav__button button:hover{
+
+    opacity: 85%;
+}
+
+/* =============> - <============= */
+
+
+
+
 
 /* The gray section */
 .section2{
@@ -40,7 +83,7 @@ nav{
 
 
 /* The vertical line betwen text and picture */
-@media only screen and (min-width: 992px){
+@media screen and (min-width: 992px){
     div.vertical-line{
 
         margin-block: auto;
